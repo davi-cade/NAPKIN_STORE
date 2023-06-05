@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAPKINSTORE</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">NAPKIN<span>STORE</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#s1">Início</a></li>
+                    <li><a href="#s2">Produtos</a></li>
+                    <li><a href="#s3">Contato</a></li>
+                    <li><a href="#s4">Sobre</a></li>
+                    <li><a href="#s1">Entrar</a></li>
+                </ul>
+            </nav>
+            <div  class="nav-icon-container">
+                <img src="/images/cart1.png">
+                <img src="/images/menu1.png" class="menu-button">
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <div id="s1" class="header--inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h2>Crie algo <span>importante</span> com um guardanapo!</h2>
+                    <p>Os primeiros relatos de uso similar ao guardanapo para fins de higiene nas refeições,
+                        vem da Grécia antiga, quando era utilizado o pão para essa finalidade, principalmente
+                        nos textos de Alcifrão ou Aristófanes.
+                    </p>
+
+                    <button>Crie seu proprio estilo! </button>
+                </div>
+                <div class="header-bottom-side-right">
+                    <img src="/images/04.png">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="orange-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="/images/products/product-1.jpg" alt="">
+                    <img src="/images/products/product-2.jpg" alt="">
+                    <img src="/images/products/product-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div id="s2" class="page-inner-content">
+                <h3 class="section-title">Mais vendidos da semana!</h3>
+                <div class="subtitle-underline"></div>
+
+                <div class="cols cols-4">
+
+                    <div class="product">
+                        <img src="images/products/product-4.jpg" alt="">
+                        <p class="product-name">Guardanapo Convencional</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">2,00. <span>BRL</span></p>
+                    </div>
+
+                    <div class="product">
+                        <img src="images/products/product-5.jpg" alt="">
+                        <p class="product-name">Guardanapo Folha Dupla</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">8,00 <span>BRL</span></p>
+                    </div>
+
+                    <div class="product">
+                        <img src="images/products/product-6.jpg" alt="">
+                        <p class="product-name">Guardanapos Coloridos</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">15,00 <span>BRL</span></p>
+                    </div>
+
+                    <div class="product">
+                        <img src="images/products/product-7.jpg" alt="">
+                        <p class="product-name">Guardanapos de Linho</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">20,00 <span>BRL</span></p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer id="s3">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1 class="logo">NAPKIN<span>STORE</span></h1>
+                <p>Do moderno ao tradicional</p>
+            </div>
+
+            <ul id="s4" class="footer-list">
+                <li>
+                    <h3>Contato</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">napkinstore@gmail.com</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">www.napikinstore.com</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">(87) 9- 994910-76</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tradicional</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Colorido</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tecido</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Quer ficar por dentro das promoções?</h3>
+
+                <p>
+                    Digite seu e-mail para receber notificações sempre que tiver as melhores ofertas!
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email" placeholder="Digite seu e-mail aqui!">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 TODOS OS DIREITOS RESERVADOS
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector('.menu-button');
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle('show-menu');
+        })
+
+    </script>
+</body>
+</html>
